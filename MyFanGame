@@ -149,7 +149,7 @@ goto A
 
 :D
 cls
-echo (5)
+echo [32m(5)[0m
 echo       TiY 4
 echo.
 echo.

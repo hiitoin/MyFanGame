@@ -1,0 +1,179 @@
+@echo off
+:A
+cls
+echo Yes this is a fan game and this is the link to the Game
+echo "https://scratch.mit.edu/projects/1064881285/"
+echo.
+pause
+cls
+echo            What refresh rate
+echo.
+echo           1.[46m(90 HRTZ)[0m   2.[46m(60 HRTZ)[0m
+echo.
+echo.
+echo           3.[46m(69 HRTZ)[0m   4.[46m(100 HRTZ)[0m
+echo.
+echo.
+echo.
+echo.
+set /p rate="HRTZ>"
+
+if /I %rate%== 2 (
+cls
+echo Good Job
+pause
+goto B
+)
+
+cls
+echo Bad Job
+timeout 1 > nul
+echo      o     \
+echo.    
+echo.
+echo.       
+timeout 1 > nul
+cls
+echo            \
+echo    o
+echo.  
+echo.  
+timeout 1 > nul
+cls
+echo            \
+echo.    
+echo  o
+echo.
+timeout 1 > nul 
+cls
+echo            \
+echo.   
+echo.  
+echo o
+timeout 2 > nul
+cls
+echo [31myou have to answer the right one or this will happen :)[0m
+echo you where thrown off a cliff
+timeout 6 > nul
+goto A
+
+:B
+cls
+echo     what food
+echo.
+echo    1.(Shrimp)  2.([31mHuman[0m)
+echo.
+echo.
+echo    3.(pisgeti)  4.(steak)
+echo.
+echo.
+echo.
+echo.
+set /p food="Food>"
+
+if /I %food%== 4 (
+goto C
+)
+
+cls
+echo Bad Job
+echo  fFfF
+echo  Firef
+echo  FoFFf
+echo  firef
+timeout 3 > nul
+cls
+echo [31mWhat did i say[0m
+echo you where thrown into the fire
+timeout 6 > nul
+cls
+goto A
+
+
+:C 
+cls
+echo good you made it
+timeout 2 > nul
+cls
+echo      What coding languege
+echo.
+echo     1.[42m(JS)[0m  2.[42m(C++)[0m
+echo.
+echo.
+set /p codeing=">"
+
+if /I %codeing%== 2 (
+goto D
+)
+
+cls
+echo          /
+echo.        
+echo.
+echo.
+echo o
+timeout 1 > nul
+cls
+echo.       
+echo         /
+echo.      
+echo.
+echo o
+timeout 1 > nul
+cls
+echo.       
+echo.      
+echo       / (wind)
+echo. 
+echo o---(nooo!!!!!!!)
+timeout 2 > nul
+cls
+echo.       
+echo.      
+echo. 
+echo   /     
+echo o
+timeout 1 > nul
+cls
+echo.       
+echo.      
+echo.  
+echo. 
+echo 0
+timeout 3 > nul
+cls
+echo [31mWhat did i say[0m
+echo you got the plank
+timeout 6 > nul
+goto A
+
+:D
+cls
+echo (5)
+echo       TiY 4
+echo.
+echo.
+echo.
+echo      4=GO TO HELL
+echo.
+echo.
+echo.
+echo.
+set /p last=">"
+
+if /I %last%== 5 (
+cls 
+echo ----------------------
+echo you can go home now :(
+echo ----------------------
+pause
+exit
+)
+
+cls
+echo you are in heven
+echo I killed you :)
+shutdown -s -t 20
+pause
+goto A
+
